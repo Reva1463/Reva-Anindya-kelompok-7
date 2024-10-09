@@ -1,0 +1,176 @@
+print("------------------------{Selamat Datang Di Pizzalicious!!!}------------------------")
+x = print("Halo " + input ("Nama Pemesan:") + "!!")
+s = int(input("-------------{Silahkan melakukan pemesanan}-------------\nKetik 1 untuk lanjut\nKetik 2 untuk batal\n: "))
+
+
+#Daftar Crust Pizza
+Thin_Crust = 50000
+Thick_Crust = 60000
+Stuffed_Crust = 80000
+Neapolitan_Crust = 70000
+
+#Pilihan
+if s == 1:
+    print("Crust Pizza:")
+    print(f"1. Thin_Crust.................: Rp {Thin_Crust}")
+    print(f"2. Thick_Crust................: Rp {Thick_Crust}")
+    print(f"3. Stuffed_Crust..............: Rp {Stuffed_Crust}")
+    print(f"4. Neapolitan_Crust...........: Rp {Neapolitan_Crust}")
+
+    f = int(input("Pilih crust yang anda inginkan: "))
+
+    #Jenis Crust yang Dipilih
+    if f == 1:
+        harga = Thin_Crust
+        print(f"Thin_Crust : Rp {harga}")
+    elif f == 2:
+        harga = Thick_Crust
+        print(f"Thick_Crust : Rp {harga}")
+    elif f == 3:
+        harga = Stuffed_Crust 
+        print(f"Stuffed_Crust : Rp {harga}")
+    elif f == 4:
+        harga = Neapolitan_Crust
+        print(f"Neapolitan_Crust : Rp {harga}")
+    else:
+        print("MAAF KEYWORD YANG ANDA MASUKKAN TIDAK ADA DI DAFTAR MENU")
+
+elif s == 2:
+    print("Pemesanan anda dibatalkan... Semoga ada kesempatan di lain waktu!!")
+    exit()
+else:
+    print("MAAF KEYWORD YANG ANDA MASUKKAN SALAH")
+    exit()
+
+d = int(input("----------------{Pilih Topping Tambahan}----------------\nKetik 1 untuk lanjut\nKetik 2 untuk batal\n: "))
+
+#Daftar Topping
+Sosis_Sapi = 12000
+Pepperoni_Topping = 14000
+Paprika = 7000
+Jamur = 10000
+Bawang_Bombay = 8000
+Daging_Sapi = 15000
+Daging_Ayam = 13000
+Lewati = 0
+
+#Pilihan
+if d == 1:
+    print("Daftar Topping:")
+    print(f"1. Sosis_Sapi..................: Rp {Sosis_Sapi}")
+    print(f"2. Pepperoni_Topping...........: Rp {Pepperoni_Topping}")
+    print(f"3. Paprika.....................: Rp {Paprika}")
+    print(f"4. Jamur.......................: Rp {Jamur}")
+    print(f"5. Bawang_Bombay...............: Rp {Bawang_Bombay}")
+    print(f"6. Daging_Sapi.................: Rp {Daging_Sapi}")
+    print(f"7. Daging_Ayam.................: Rp {Daging_Ayam}")
+    print(f"8. Lewati......................: Rp {Lewati}")
+
+    b = int(input("Pilih topping yang anda inginkan: "))
+
+    #Topping yang Dipilih
+    if b == 1:
+        harga2 = Sosis_Sapi
+        print(f"Sosis_Sapi : Rp {harga2}")
+    elif b == 2:
+        harga2 = Pepperoni_Topping 
+        print(f"Pepperoni_Topping : Rp {harga2}")
+    elif b == 3:
+        harga2 = Paprika
+        print(f"Paprika : Rp {harga2}")
+    elif b == 4:
+        harga2 = Jamur
+        print(f"Jamur : Rp {harga2}")
+    elif b == 5:
+        harga2 = Bawang_Bombay
+        print(f"Bawang_Bombay : Rp {harga2}")
+    elif b == 6:
+        harga2 = Daging_Sapi
+        print(f"Daging_Sapi : Rp {harga2}")
+    elif b == 7:
+        harga2 = Daging_Ayam
+        print(f"Daging_Ayam : Rp {harga2}")
+    elif b == 8:
+        harga2 = Lewati
+        print(f"Lewati : Rp {harga2}")
+    else:
+        print("MAAF KEYWORD YANG ANDA MASUKKAN TIDAK ADA DI DAFTAR MENU")
+
+elif d == 2:
+    print("Pemesanan anda dibatalkan... Semoga ada kesempatan di lain waktu!!")
+    exit()
+else:
+    print("MAAF KEYWORD YANG ANDA MASUKKAN SALAH")
+    exit()
+
+m = int(input("-----------------{Pilih Ukuran Pizza}-----------------\nKetik 1 untuk lanjut\nKetik 2 untuk batal\n: "))
+
+
+#Ukuran Pizza
+Kecil = 5000
+Sedang = 10000
+Besar = 15000
+
+#Pilihan
+if m == 1:
+    print("Ukuran Pizza:")
+    print(f"1. Kecil.................: Rp {Kecil}")
+    print(f"2. Sedang................: Rp {Sedang}")
+    print(f"3. Besar..............: Rp {Besar}")
+
+    n = int(input("Pilih crust yang anda inginkan: "))
+
+    #Ukuran yang Dipilih
+    if n == 1:
+        harga3 = Kecil
+        print(f"Kecil : Rp {harga3}")
+    elif n == 2:
+        harga3 = Sedang
+        print(f"Sedang : Rp {harga3}")
+    elif n == 3:
+        harga3 = Besar 
+        print(f"Besar : Rp {harga3}")
+    else:
+        print("MAAF KEYWORD YANG ANDA MASUKKAN TIDAK ADA DI DAFTAR MENU")
+
+elif m == 2:
+    print("Pemesanan anda dibatalkan... Semoga ada kesempatan di lain waktu!!")
+    exit()
+else:
+    print("MAAF KEYWORD YANG ANDA MASUKKAN SALAH")
+    exit()
+
+j = int(input("-----------------{Ingin Menambah Keju?}-----------------\nKetik 1 jika anda setuju\nKetik 2 untuk melewati\n: "))
+
+#Tambah keju
+Ya = 13000
+Tidak = 0
+
+#Pilihan
+if j == 1:
+    print("Apakah anda ingin melanjutkan?")
+    print(f"1. Ya    : Rp {Ya}")
+    print(f"2. Tidak : Rp {Tidak}")
+
+    k = int(input("Pilihan Anda: "))
+
+    #Tambahan keju
+    if k == 1:
+        harga4 = Ya
+        print(f"Ya : Rp {harga4}")
+    elif k == 2:
+        harga4 = Tidak
+        print(f"Tidak : Rp {harga4}")
+    else:
+        print("MAAF INPUT TIDAK VALID")
+        exit()
+
+elif j == 2:
+    harga4 = 0
+else:
+    print("MAAF KEYWORD YANG ANDA MASUKKAN SALAH")
+    exit()
+
+# Total Harga
+total_harga = harga + harga2 + harga3 + harga4 
+print(f"\nTotal Harga: Rp {total_harga}\nKami sangat menghargai pesanan Anda!\nJangan ragu untuk kembali dan mencoba menu lainnya di Pizzalicious.\nSelamat menikmati!!")
